@@ -1,0 +1,136 @@
+/* header
+============================================ */
+body {background:#fff;}
+
+.header {height:47px;width:100%;border-bottom:3px solid #3EA6EF;background:#4CB5FF;color:#fff;position:fixed;top:0;left:0;z-index:100;}
+.header img {float:left;margin:7px 0 0 3%;}
+.header span {position:absolute;font-size:18pt;width:160px;text-align:center;line-height:50px;left:50%;margin-left:-80px;}
+.header p{position:absolute;top:11px;right:27%;display:block;}
+.header p select{display:block;width:100px;height:30px;background-color:#E3E3E3;}
+.header button {font-size:10.5pt;height:30px;line-height:14px;width:36px;color:#fff;float:right;background:#4CB5FF;margin:10px 3% 0 0;border:1px #fff solid;border-radius:4px;display:inline-block;}
+
+/* 首页main
+=============================================== */
+.main_index {width:450px;padding:15px;color:#455469;font-size:12pt;padding-top:48px;margin:auto;}
+
+.main_index > div {width:450px;border-top:1px solid #E7E7E7;padding-top:15px;}
+.main_index .main_car .address {width:450px;height:30px;margin:20pt 0 10pt 0;float:left;text-align:center;}
+.main_index .main_car > img {width:215px;height:147px;overflow:hidden;float:left;}
+
+.main_index .main_car > div ul {float:right;width:215px;height:160px;margin-top:-4px;}
+.main_index .main_car > div ul button {display:inline-block;border:1px solid #649FD7;background:#93C9EF;color:#fFF;font-weight:bold;height:22pt;width:50pt;float:right;border-radius:4px;text-align:center;}
+.main_index .main_car > div ul button:active {background:#83BDE5;}
+.main_index .main_car > div ul li {height:23pt;line-height:23pt;}
+.main_index .main_car > div ul li p {line-height:18pt;font-size:11pt;}
+.main_index .main_car .information h1 {font-size:20pt;color:#FF5400;font-style:italic;display:inline;}
+.main_index .main_car .information h2 {font-size:12pt;color:#A0A0A0;display:inline;padding-left:8px;}
+.main_index .main_car .address b {padding-left:10pt;font-size:12pt;}
+/* .main_index .main_car .address img {margin-top:5pt;display:inline-block;clear:left;} */
+.main_index .main_car .information span {float:left;font-size:12pt;height:14pt;display:inline-block;width:100px;}
+/* 时间轴 */
+ .car_time {width:450px;height:15px;overflow:hidden;}
+ .time_bar { width:450px; height:6px; font-size:8pt; background:#649FD7;margin-bottom:25pt; position:relative;}
+ .time_bar p {display:block;height:6px;position:absolute; background:#ffd559;}
+ .time_bar > div { height:6px; background:#C1282D; float:left; position:absolute; }
+ .time_bar div span { display:block; width:1px; border-left:1px solid #fff;border-right:1px solid #fff; float:left; }
+ .time_bar div span+span { float:right; }
+ .time_bar div span b {  position:relative; left:-10pt; top:8pt;  }
+ .time_bar div span+span b { left:-13pt; top:-13pt;}
+
+
+/* 订车main
+=============================================== */
+.main_order {width:450px;padding:15px;color:#455469;font-size:13pt;padding-top:65px;margin:auto;}
+
+.main_order .information {height:75px;}
+.main_order .information img {width:215px;height:147px;overflow:hidden;float:left;margin-bottom:10pt;}
+.main_order  div ul {float:right;width:215px;height:160px;margin-top:-5px;}
+.main_order  div ul li {line-height:25pt;}
+.main_order .information h1 {font-size:23pt;color:#FF5400;font-style:italic;display:inline;}
+.main_order .information h2 {font-size:14pt;color:#A0A0A0;display:inline;padding-left:8px;}
+.main_order .information h3 {float:right;font-size:11.5pt;line-height:16pt;display:inline-block;}
+/*.main_order .address img {float:left; margin-top:10pt;width:12px;height:16px;}*/
+
+.main_order .date_title {font-size:13pt;float:left;display:block;height:25px;width:340px;overflow:hidden;
+margin:30px 0 10px 55px;text-align:center;}
+.main_order .date_title b {padding-left:5pt;font-size:13pt;}
+
+.main_order .time_title {font-size:12pt;float:left;display:block;height:30px;line-height:30px;overflow:hidden;margin:10pt 0 0 0;}
+
+.main_order .choose_time {width:450px;height:120px;padding:10pt 0;}
+.main_order .choose_time .time_title{font-size:14pt;width:130px;}
+.main_order .choose_time div div {width:315px;height:30px;border:1px solid #649FD7;float:left;margin:10pt 0 5pt 0;}
+
+.main_order button {width:340px;height:43px;border:none;background:#93C9EF;margin:12pt 0 30pt 55px ;color:#fff;font-size:16pt;}
+.main_order button:active {background:#83BDE5;}
+
+.main_order .legend {width:450px;height:115px;border-top:1px solid #D7D7D7;padding-top:7pt;}
+
+.main_order .legend > span {clear:right;height:20pt;display:block;}
+.main_order .legend div * {float:left;}
+.main_order .legend .legend_color {width:260px;height:20pt;}
+.main_order .legend .legend_color div {width:50px;height:5px;background:#FFE400;margin:6pt 10pt 0 0;}
+.main_order .legend  .legend_red div {background:#C1272D;}
+.main_order .legend  .legend_blue div {background:#649FD7;}
+
+
+/* 登录
+=============================================== */
+.main_login {width:340px;padding:15px;color:#455469;padding-top:100px;margin:auto;}
+.main_login div {width:340px;height:80px;}
+.main_login .login_name input , .main_login .login_password input {width:230px;padding-left:10px;height:40px;border:1px solid #649FD7;float:right;}
+.main_login span {font-size:16pt;float:left;padding-top:5px;}
+.main_login b {font-size:10pt;float:left;width:180px;color:red;margin:2pt 0 0 75pt;}
+.main_login h1 {font-size:12pt;color:#5894D0;float:right;margin-right:200px;margin-top:-4px;}
+
+.main_login .login_checkbox  {height:50px; }
+.main_login .login_checkbox input {float:left;width:15pt;height:15pt;margin-right:15pt;display:inline-block; }
+
+.main_login .login_checkbox b {float:left;color:#455469;width:100pt;font-size:12pt;color:#5894D2;margin:0;}
+.main_login button {width:340px;height:43px;border:none;background:#93C9EF;margin:0 0 20pt 0;color:#fff;font-size:16pt;}
+.main_login button:active {background:#83BDE5;}
+
+
+/* 支付成功
+=============================================== */
+.main_success {width:340px;padding:15px;color:#455469;font-size:14pt;padding-top:70px;margin:auto;}
+.main_success * {float:left;}
+.main_success h1 {width:340px;font-size:18pt;text-align:center;margin-bottom:15pt;line-height:65px;height:65px;color:#333;border-bottom:1px solid #ccc;}
+.main_success p {width:100px;height:45pt;float:left;font-size:14pt;height:40pt;}
+.main_success h2 {width:220px;text-align:left;float:right;color:#555;height:40pt;font-size:14pt;}
+.main_success b {width:220px;text-align:left;float:right;color:#555;height:40pt;font-size:14pt;}
+.main_success button {width:340px;height:43px;border:none;background:#93C9EF;margin:0 0 25pt 0 ;color:#fff;font-size:16pt;}
+.main_success button:active {background:#83BDE5;}
+
+
+/* 支付
+=============================================== */
+.main_index .main_car .information1 ul {height:157px;margin-top:5pt;}
+.main_index .main_car .information1 li {height:50px;}
+.main_index .main_car .information1 li b {padding:2pt 0 0 15pt;font-size:13pt;}
+
+.main_pay {width:450px;padding:15px;color:#455469;font-size:13pt;background:#fff;padding-top:-25px;color:#555;margin:auto;}
+.main_pay div {width:450px;height:30pt;padding-top:15pt;border-bottom: 1px solid #e7e7e7;}
+
+.main_pay div * {float:left;font-size:13pt;}
+.main_pay div span {padding-left:80pt;}
+.main_pay div h1 {float:left;float:left;}
+.main_pay div h2 {padding-left:20pt;}
+.main_pay .pay_total {height:40px;line-height:40px;border:none;}
+.main_pay .pay_total b {color:red;display:inline-block;}
+
+.main_pay button {width:340px;height:43px;border:none;background:#93C9EF;margin:20pt 0 20pt 55px ;color:#fff;font-size:16pt;}
+.main_pay button:active {background:#83BDE5;}
+
+
+
+/* 锁门还车
+=============================================== */
+.main_lock {width:340px;padding:15px;color:#455469;font-size:14pt;padding-top:80px;margin:auto;}
+.main_lock h1 {width:340px;font-size:18pt;text-align:center;margin-bottom:15pt;line-height:65px;height:65px;color:#333;border-bottom:1px solid #e7e7e7;}
+
+.main_lock .lock_text {width:340px;text-align:center;color:#555;height:35px;font-size:14pt;}
+.main_lock .lock_text span {color:red;display:inline-block;width:10pt;}
+.main_lock button {width:340px;height:43px;border:none;background:#93C9EF;margin:30pt 0 20pt 0 ;color:#fff;font-size:16pt;}
+.main_lock button:active {background:#83BDE5;}
+

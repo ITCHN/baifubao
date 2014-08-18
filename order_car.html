@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;maximum-scale=1.0;minimum-scale=1.0;user-scalable=no;">
+	
+	<title>百付宝</title>
+		
+	<link rel="stylesheet" href="css/clear.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+	
+	<script src="js/jq.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".time_bar div").each(function(){
+				var t = $.trim($(this).children().text());
+				var s = Math.floor(t.substr(0,2))*60 + Math.floor(t.substr(3,2));
+				var e = Math.floor(t.substr(5,2))*60 + Math.floor(t.substr(8,2));
+				var left = (s / (24 * 60)) * 450;
+				var width = (e / (24 * 60)) * 450 - left;
+				$(this).css({"left":left+"px", "width":width+"px"});
+			});
+		});
+	</script>
+</head>
+<body>
+<!--  header 
+=================================================-->	
+<div class="header">
+	<img src="images/logo_bfb.png" />
+	<span>订车</span>
+	<button  type="button">帮助</button>
+</div>
+
+<!-- main 
+=====================================================-->	
+<div class="main_order">
+	<div class="information">
+	<!-- 新设计 -->
+		<img src="images/car_img.jpg"  />
+		<ul>
+			<li ><span>北京现代</span></li>
+			<li><h1>15.9</h1><h2>元/小时</h2></li>
+			<li><h3>地址地址地址地址地址地址地地址地址地地址地址地址地地址地址地地址地址地址地地址地址地地址地址地址地址</h3></li>
+		</ul>
+	</div>
+	<div class="date_title"><b>限行日</b><b>2014-06-20</b></div>
+	<!-- 新设计 0729 over ,ps：限行日 替换为 <b>限行日</b>-->
+	
+	<div class="car_time"></div>
+<!-- 时间轴 start  -->	
+	<div class="time_bar">
+		<p class="time_bar_yellw"  style="width:244px;left:131px;"></p>
+		<div>
+			<span><b>05:00</b></span><span><b>12:00</b></span>
+		</div>
+	</div>
+<!-- 时间轴 end -->				
+
+		
+	<div class="date_title"><b>限行日</b><b>2014-06-20</b></div>	
+	<div class="car_time"></div>
+	<div class="time_bar">
+		<div>
+			<span><b>01:00</b></span><span><b>08:00</b></span>
+		</div>
+	</div>
+	
+	<div class="date_title"><b>限行日</b><b>2014-06-20</b></div>
+	<div class="car_time"></div>
+	<div class="time_bar">
+		<p class="time_bar_yellw"  style="width:244px;left:131px;"></p>
+		<div>
+			<span><b>05:00</b></span><span><b>12:00</b></span>
+		</div>
+	</div>
+
+	<div class="choose_time">
+		<div class="choose_time1">
+			<span class="time_title">取车时间</span>
+			<div >此处加时间控件</div>
+		</div>	
+		<div class="choose_time2">
+			<span class="time_title">还车时间</span>
+			<div >此处加时间控件</div>
+		</div>	
+	</div>
+	<button type="button">确 定</button>
+	<div class="legend">
+		<span>图例</span>
+		<div class="legend_color legend_yellow">
+			<div ></div><span>限行时段</span>
+		</div>
+		<div class="legend_color legend_red">
+			<div ></div><span>已被预订</span>
+		</div>
+		<div class="legend_color legend_blue">
+			<div ></div><span>空闲时段</span>
+		</div>
+	</div>
+</div>
+</body>	
+</html>

@@ -1,0 +1,43 @@
+/* WW CSS - V1.1/2011/03/11 */
+
+/* CSS Format */
+
+html,body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textarea,iframe,table,th,td,hr { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: top; }
+ul,li { list-style-type: none; }
+table { border-collapse:collapse; border-spacing:0; empty-cells:show; }
+* { font-family:"微软雅黑"; }
+
+h1,h2,h3,h4,h5,h6,b { font-size: 14px; font-weight:normal;}
+body { background: #fff; color: #000; line-height: 1.2; }
+a,a:link { color: #666; text-decoration: none; }
+a:visited {  }
+a:active, a:hover { text-decoration: underline; }
+a:focus { outline: none; }
+hr { border:none; border-bottom:1px dotted; height:10px; margin:10px; clear: both; color:#000; }
+
+/* Global Class */
+
+/* fixed */
+.fixed:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+.fixed { display: block; min-height: 1%; }
+*html .fixed { height: 1%; }
+/* clear */
+.clear { display: block!important; float: none!important; clear: both; overflow: hidden; width: auto!important; height: 0!important; margin: 0 auto!important; padding: 0!important; font-size: 0; line-height: 0; }
+/* left */
+.left { display: inline; float: left; }
+/* right */
+.right { display: inline; float: right; }
+/* center */
+.center { margin-left:auto; margin-right:auto; }
+/* grid */
+.grid th, .grid td { border:1px solid #c0c0c0; padding:5px; }
+.grid th { background:#eee; }
+/* wall */
+.wall { margin-top:1px; margin-left:1px; }
+.wall>* { display:block; float:left; margin-left:-1px; margin-top:-1px; border:1px solid #c0c0c0; padding:5px; }
+
+/* behavior: url(ie-css3.htc); */
+
+
+/* End */
